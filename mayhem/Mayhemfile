@@ -1,0 +1,10 @@
+project: python-py-pdf-parser
+target: load-fuzz
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_load.py
+    libfuzzer: true
+    timeout: 5
+    max_length: 9000
