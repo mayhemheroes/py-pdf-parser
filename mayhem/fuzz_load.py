@@ -19,7 +19,7 @@ def nostdout():
     sys.stdout = save_stdout
     sys.stderr = save_stderr
 
-with atheris.instrument_imports(include=['pdfminer', 'py_pdf_parser']):
+with atheris.instrument_imports(include=['py_pdf_parser']):
     import py_pdf_parser.loaders
 
 def TestOneInput(data):
