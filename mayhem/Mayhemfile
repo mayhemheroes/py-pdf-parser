@@ -1,0 +1,7 @@
+project: py-pdf-parser
+target: load-fuzz
+testsuite:
+  - file:///mayhem/mayhem/testsuite
+cmds:
+  - cmd: /mayhem/load-fuzz
+    libfuzzer: true
